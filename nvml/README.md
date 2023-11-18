@@ -17,7 +17,7 @@ For Agent v7.21+ / v6.21+, follow the instructions below to install the NVML che
    ```shell
    datadog-agent integration install -t datadog-nvml==<INTEGRATION_VERSION>
    # You may also need to install dependencies since those aren't packaged into the wheel
-   sudo -u dd-agent -H /opt/datadog-agent/embedded/bin/pip3 install grpcio pynvml
+   sudo -u dd-agent -H /opt/datadog-agent/embedded/bin/pip3 install grpcio pynvml==11.4.1
    ```
 
 2. Configure your integration similar to core [integrations][4].
